@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <style>
+        .element-parent {
+            border: 5px solid #ff0000;
+        }
+
+        .element-child {
+            color: #fff;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .element-a {
+            height: 100px;
+            background: #b4b400;
+        }
+
+        .element-b {
+            height: 150px;
+            background: #3535f3;
+        }
+
+        .element-c {
+            height: 200px;
+            background: #00a31e;
+        }
+
+        .element-a {
+            float: left;
+        }
+
+        .element-b {
+            float: right;
+            /* clear: right; */
+        }
+
+        .element-c {
+            float: right;
+            /* clear: both; */
+        }
+
+        .clear-both {
+            clear: both;
+        }
+    </style> -->
+
+    <!-- <div class="element-parent">
+        <div class="element-child element-a">Phần tử A</div>
+        <div class="element-child element-b">Phần tử B</div>
+        <div class="element-child element-c">Phần tử C</div>
+        <div class="clear-both"></div>
+    </div> -->
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .box {
+            background: #ddd;
+            margin-bottom: 20px;
+            font-size: 30px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .sidebar-1 {
+            float: left;
+            margin-right: 2%;
+            width: 25%;
+            height: 200px;
+        }
+
+        .article {
+            float: left;
+            margin-right: 2%;
+            width: 46%;
+            height: 200px;
+        }
+
+        .sidebar-2 {
+            float: right;
+            width: 25%;
+            height: 200px;
+        }
+
+        /* .clear-both {
+            clear: both;
+        } */
+    </style>
+    <header class="box">
+        Header
+    </header>
+
+    <main class="main">
+        <div class="box sidebar-1">Sidebar 1</div>
+        <div class="box article">Article</div>
+        <div class="box sidebar-2">Sidebar 2</div>
+        <!-- <div class="clear-both"></div> -->
+    </main>
+
+    <footer class="box">
+        Footer
+    </footer>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .element {
+            text-align: center;
+            padding: 15px;
+            font-size: 15px;
+            color: #000;
+        }
+
+        .header {
+            padding: 25px;
+            background: #92DFC8; 
+        }
+
+        .content {
+            float: left;
+            width: 70%;
+            height: 500px;
+            background: #CAEFF2;
+        }
+
+        .aside {
+            float: right;
+            width:30%;
+            height: 500px;
+            background: #F2D8CA;
+        }
+
+        .box {
+            float: left;
+            width: calc(25% - 45px/4);
+            margin-top: 15px;
+            margin-right: 15px;
+            height: 150px;
+            background: #F2F1CA;
+        }
+
+        .box:nth-child(4) {
+            margin-right: 0;
+        }
+
+        .clear-both {
+            clear: both;
+        }
+
+        .footer {
+            margin-top: 15px;
+            background: #EECBF3;
+        }
+
+        @media screen and (max-width:768px)
+        {
+            .content {
+                width: 100%;
+            }
+
+            .aside {
+                width: 100%;
+            }
+
+            .box {
+                width: calc(50% - 15px/2);
+            }
+
+            .box:nth-child(2) {
+                margin-right: 0;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .box {
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    </style>
+
+    <header class="element header">
+        HEADER
+    </header>
+
+    <div class="section-one">
+        <div class="element content">
+            CONTENT
+        </div>
+    
+        <div class="element aside">
+            ASIDE
+        </div>
+        <div class="clear-both"></div>
+    </div>
+    
+    <div class="section-two">
+        <div class="element box">
+            Box 1
+        </div>
+        <div class="element box">
+            Box 2
+        </div>
+        <div class="element box">
+            Box 3
+        </div>
+        <div class="element box">
+            Box 4
+        </div>
+        <div class="clear-both"></div>
+    </div>
+
+    <footer class="element footer">
+        FOOTER
+    </footer>
+</body>
+</html>
